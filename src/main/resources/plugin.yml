@@ -1,0 +1,7 @@
+name: THMC-Punishments
+main: own.inv.me.ThmcBansPlugin
+version: 1.0
+author: inv
+api-version: 1.19
+commands:
+  punish:

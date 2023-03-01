@@ -1,0 +1,176 @@
+#SPIGOT API MATERIALS: https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Material.html
+
+Items:
+  Main_Inventory:
+    # Placeholders:
+    # %name%: Get target's name.
+    History:
+      Material: BOOK
+      Name: '&c&lHistory'
+      Lore:
+        - '&cClick to view player previous punishments'
+    New_Offence:
+      Material: IRON_AXE
+      Name: '&c&lNew Offence'
+      Lore:
+        - '&cClick to punish him'
+    Player_Info:
+      Material: PLAYER_HEAD
+      Name: '&c&lPlayer Info'
+      Lore:
+        - '&cClick to view his info'
+    Alts:
+      Material: PAPER
+      Name: '&c&lAlts'
+      Lore:
+        - '&cClick to view his alts'
+
+
+  Player_Info_Inventory:
+    # Placeholders:
+    # %god_perms%: Get whether player has god permissions or not.
+    # %fly_perms%: Get whether player has god permissions or not.
+    # %username%: Get player's username.
+    # %is_staff%: Get whether player is a staff member or not.
+    # %is_op%: Get whether player has op permissions or not.
+
+    God_Perms:
+      Material: ENCHANTED_BOOK
+      Name: '&eGod Perms: &7%god_perms%'
+    Fly_Perms:
+      Material: FEATHER
+      Name: '&eFly: &7%fly_perms%'
+    Username:
+      Material: PLAYER_HEAD
+      Name: '&eUsername: &7%username%'
+    Staff:
+      Material: NETHER_STAR
+      Name: '&eStaff: &7%is_staff%'
+    OP:
+      Material: ENCHANTED_GOLDEN_APPLE
+      Name: '&eOP Perms: &7%is_op%'
+
+
+  Alts_Inventory:
+    # Placeholders:
+    # %alt_name%: Get player alt's name.
+    # %last_seen%: Get player alt last seen date.
+
+    Alt:
+      Material: PLAYER_HEAD
+      Name: '&e%alt_name%'
+      Lore:
+        - '&eLast seen: &7%last_seen%'
+        - '&7'
+        - '&eClick &7to punish'
+
+
+  History_Inventory:
+    # Placeholders:
+    # %reason%: Get punishment's reason.
+    # %staff%: Get punishment's executer name.
+    # %issue_date%: Get punishment's issuing date.
+    # %expire_date%: Get punishment's expiring date.
+    # %remaining%: Get punishment's remaining time.
+
+    Ban_History:
+      Active:
+        Material: CHEST
+        Name: '&8» &cBAN &8(&aActive&8)'
+        Lore:
+          - '&eReason: &7%reason%'
+          - '&eStaff: &7%staff%'
+          - '&eIssued: &7%issue_date%'
+          - '&eRemaining: &7%remaining%'
+          - '&7'
+          - '&eClick &7to take an action'
+      Finished:
+        Material: CHEST
+        Name: '&8» &cBAN'
+        Lore:
+          - '&eReason: &7%reason%'
+          - '&eStaff: &7%staff%'
+          - '&eIssued: &7%issue_date%'
+          - '&eExpired: &7%expire_date%'
+          - '&7'
+          - '&eClick &7to take an action'
+
+    Mute_History:
+      Active:
+        Material: ACACIA_SIGN
+        Name: '&8» &bMute &8(&aActive&8)'
+        Lore:
+          - '&eReason: &7%reason%'
+          - '&eStaff: &7%staff%'
+          - '&eIssued: &7%issue_date%'
+          - '&eRemaining: &7%remaining%'
+          - '&7'
+          - '&eClick &7to take an action'
+      Finished:
+        Material: ACACIA_SIGN
+        Name: '&8» &bMute'
+        Lore:
+          - '&eReason: &7%reason%'
+          - '&eStaff: &7%staff%'
+          - '&eIssued: &7%issue_date%'
+          - '&eExpired: &7%expire_date%'
+          - '&7'
+          - '&eClick &7to take an action'
+
+    Warn_History:
+      Active:
+        Material: BOOK
+        Name: '&8» &aWarn &8(&aActive&8)'
+        Lore:
+          - '&eReason: &7%reason%'
+          - '&eStaff: &7%staff%'
+          - '&eIssued: &7%issue_date%'
+          - '&eRemaining: &7%remaining%'
+          - '&7'
+          - '&eClick &7to take an action'
+      Finished:
+        Material: BOOK
+        Name: '&8» &aWarn'
+        Lore:
+          - '&eReason: &7%reason%'
+          - '&eStaff: &7%staff%'
+          - '&eIssued: &7%issue_date%'
+          - '&eExpired: &7%expire_date%'
+          - '&7'
+          - '&eClick &7to take an action'
+
+
+  Confirm_History_Inventory:
+    Delete:
+      Material: BARRIER
+      Name: '&c&lDelete Listing'
+      Lore:
+        - '&7Delete this punishment listing from records'
+    Edit:
+      Material: FLOWER_BANNER_PATTERN
+      Name: '&c&lEdit Punishment'
+      Lore:
+        - '&7Edit punishment reason'
+    Lift:
+      Material: GUNPOWDER
+      Name: '&c&lLift Punishment'
+      Lore:
+        - '&7Remove this punishment from the player'
+  Global:
+    Back:
+      Material: ARROW
+      Name: '&eGo Back'
+      Lore:
+        - '&7Get back to the main menu'
+
+
+  Confirm_Inventory:
+    Public:
+      Material: GREEN_WOOL
+      Name: '&a&lPublic Punishment'
+    Silent:
+      Material: GRAY_WOOL
+      Name: '&7&lSilent Punishment'
+    Cancel:
+      Material: BARRIER
+      Name: '&c&lCancel'

@@ -1,0 +1,9 @@
+Messages:
+  prefix: '&8| &bTHMC BANS &8|&7'
+  command: "%prefix% /Punish [player]"
+  new_punishment: '%prefix% Please enter a new reason for that punishment'
+  delete_success: '%prefix% Punishment is successfully lifted!'
+  update_success: '%prefix% Punishment is successfully updated!'
+  no_history: '%prefix% &b%player% &chas no previous records'
+  no_status: "%prefix% &cCan't find status for that &b%player%"
+  no_permission: "%prefix% &cYou don't have enough permissions to do this"

@@ -1,0 +1,287 @@
+compromisedaccount:
+  Item: "CHEST"
+  Name: "Compromised Account"
+  Type: "Ban"
+  Lore:
+    - "&c  "
+    - "&81st Offence: &eban&c Permanently"
+  Degrees:
+    1: ''
+bugabuse:
+  Item: "CHEST"
+  Name: "Bug Abuse"
+  Type: "Ban"
+  Lore:
+    - "&c  "
+    - "&81st Offence: &eban&c &8for &a30 days"
+    - "&82nd Offence: &eban&c Permanently"
+  Degrees:
+    1: '30d'
+    2: ''
+minorbugabuse:
+  Item: "CHEST"
+  Name: "Minor Bug Abuse"
+  Type: "Ban"
+  Lore:
+    - "&c  "
+    - "&81st Offence: &eban&c &8for &a14 days"
+    - "&82nd Offence: &eban&c &8for &a30 days"
+    - "&83rd Offence: &eban&c Permanently"
+  Degrees:
+    1: '14d'
+    2: '30d'
+    3: ''
+griefingstealingitems:
+  Item: "CHEST"
+  Name: "Griefing / Stealing / Illegal Items"
+  Type: "Ban"
+  Lore:
+    - "&c  "
+    - "&81st Offence: &eban&c &8for &a7 days"
+    - "&82nd Offence: &eban&c &8for &a14 days"
+    - "&83rd Offence: &eban&c &8for &a30 days"
+    - "&84th Offence: &eban&c Permanently"
+  Degrees:
+    1: '7d'
+    2: '14d'
+    3: '30d'
+    4: ''
+inappropriatenameskin:
+  Item: "CHEST"
+  Name: "Inappropriate Name / Skin"
+  Type: "Ban"
+  Lore:
+    - "&c  "
+    - "&81st Offence: &eban&c &8for &a14 days"
+    - "&82nd Offence: &eban&c &8for &a30 days"
+    - "&83rd Offence: &eban&c Permanently"
+  Degrees:
+    1: '14d'
+    2: '30d'
+    3: ''
+irltrading:
+  Item: "CHEST"
+  Name: "IRL Trading"
+  Type: "Ban"
+  Lore:
+    - "&c  "
+    - "&81st Offence: &eban&c &8for &a1 day"
+    - "&82nd Offence: &eban&c &8for &a7 days"
+    - "&83rd Offence: &eban&c &8for &a30 days"
+    - "&84th Offence: &eban&c Permanently"
+  Degrees:
+    1: '1d'
+    2: '7d'
+    3: '30d'
+    4: ''
+malicioushacks:
+  Item: "CHEST"
+  Name: "Malicious Hacks"
+  Type: "Ban"
+  Lore:
+    - "&c  "
+    - "&81st Offence: &eban&c &8for &a30 days"
+    - "&82nd Offence: &eban&c Permanently"
+  Degrees:
+    1: '30d'
+    2: ''
+muteevasion:
+  Item: "CHEST"
+  Name: "Mute Evasion"
+  Type: "Ban"
+  Lore:
+    - "&c  "
+    - "&81st Offence: &eban&c &8for &a1 day"
+    - "&82nd Offence: &eban&c &8for &a7 days"
+    - "&83rd Offence: &eban&c &8for &a30 days"
+    - "&84th Offence: &eban&c Permanently"
+  Degrees:
+    1: '1d'
+    2: '7d'
+    3: '30d'
+    4: ''
+scamminghighlow:
+  Item: "CHEST"
+  Name: "Scamming, High/Low Balling"
+  Type: "Ban"
+  Lore:
+    - "&c  "
+    - "&81st Offence: &eban&c &8for &a7 day"
+    - "&82nd Offence: &eban&c &8for &a14 days"
+    - "&83rd Offence: &eban&c &8for &a30 days"
+    - "&84th Offence: &eban&c Permanently"
+  Degrees:
+    1: '7d'
+    2: '14d'
+    3: '30d'
+    5: ''
+targeting:
+  Item: "CHEST"
+  Name: "Targeting"
+  Type: "Ban"
+  Lore:
+    - "&c  "
+    - "&81st Offence: &eban&c &8for &a10 minutes"
+    - "&82nd Offence: &eban&c &8for &a1 hour"
+    - "&83rd Offence: &eban&c &8for &a12 hours"
+    - "&84th Offence: &eban&c &8for &a1 day"
+  Degrees:
+    1: '10m'
+    2: '1h'
+    3: '12h'
+    4: '1d'
+    5: ''
+tptrappingpushing:
+  Item: "CHEST"
+  Name: "TPTrapping, Pushing to Death"
+  Type: "Ban"
+  Lore:
+    - "&c  "
+    - "&81st Offence: &eban&c &8for &a6 hours"
+    - "&82nd Offence: &eban&c &8for &a1 day"
+    - "&83rd Offence: &eban&c &8for &a3 days"
+    - "&84th Offence: &eban&c &8for &a7 days"
+  Degrees:
+    1: '6h'
+    2: '1d'
+    3: '3d'
+    4: '7d'
+    5: ''
+xray:
+  Item: "CHEST"
+  Name: "Xray (or silimar)"
+  Type: "Ban"
+  Lore:
+    - "&c  "
+    - "&81st Offence: &eban&c &8for &a30 days"
+    - "&82nd Offence: &eban&c Permanently"
+  Degrees:
+    1: '30d'
+    2: ''
+flightmovment:
+  Item: "CHEST"
+  Name: "Flight/Movement Hacks"
+  Type: "Ban"
+  Lore:
+    - "&c  "
+    - "&81st Offence: &eban&c &8for &a14 days"
+    - "&82nd Offence: &eban&c &8for &a30 days"
+    - "&83rd Offence: &eban&c Permanently"
+  Degrees:
+    1: '14d'
+    2: '30d'
+    3: ''
+otherhacks:
+  Item: "CHEST"
+  Name: "Other/Not Malicous Hacks"
+  Type: "Ban"
+  Lore:
+    - "&c  "
+    - "&81st Offence: &eban&c &8for &a7 days"
+    - "&82nd Offence: &eban&c &8for &a14 days"
+    - "&83rd Offence: &eban&c &8for &a30 days"
+    - "&84th Offence: &eban&c Permanently"
+  Degrees:
+    1: '7d'
+    2: '14d'
+    3: '30d'
+    4: ''
+bot:
+  Item: "ENDER_CHEST"
+  Name: "Bot"
+  Type: "IPBan"
+  Lore:
+    - "&c  "
+    - "&81st Offence: &eipban&c Permanently"
+  Degrees:
+    1: ''
+banevasion:
+  Item: "ENDER_CHEST"
+  Name: "Ban Evasion"
+  Type: "IPBan"
+  Lore:
+    - "&c  "
+    - "&81st Offence: &eipban&c Permanently"
+  Degrees:
+    1: ''
+advertisment:
+  Item: "OAK_SIGN"
+  Name: "Advertisment"
+  Type: "Mute"
+  Lore:
+    - "&c  "
+    - "&81st Offence: &emute&c &8for &a14 days"
+    - "&82nd Offence: &emute&c Permanently"
+  Degrees:
+    1: '14d'
+    2: ''
+badlanguage:
+  Item: "OAK_SIGN"
+  Name: "Inappropriate Language"
+  Type: "Mute"
+  Lore:
+    - "&c  "
+    - "&81st Offence: &emute&c &8for &a1 hour"
+    - "&81nd Offence: &emute&c &8for &a1 day"
+    - "&83rd Offence: &emute&c &8for &a7 days"
+    - "&84th Offence: &emute&c Permanently"
+  Degrees:
+    1: '1h'
+    2: '1d'
+    3: '7d'
+    4: ''
+racismsexism:
+  Item: "OAK_SIGN"
+  Name: "Racism / Sexism"
+  Type: "Mute"
+  Lore:
+    - "&c  "
+    - "&81st Offence: &emute&c &8for &a60 days"
+    - "&82nd Offence: &emute&c Permanently"
+  Degrees:
+    1: '60d'
+    2: ''
+hatespeech:
+  Item: "OAK_SIGN"
+  Name: "Hate Speech"
+  Type: "Mute"
+  Lore:
+    - "&c  "
+    - "&81st Offence: &emute&c &8for &a30 days"
+    - "&82nd Offence: &emute&c Permanently"
+  Degrees:
+    1: '30d'
+    2: ''
+spam:
+  Item: "OAK_SIGN"
+  Name: "Chat Flooding/Spam"
+  Type: "Mute"
+  Lore:
+    - "&c  "
+    - "&81st Offence: &emute&c &8for &a1 hour"
+    - "&81nd Offence: &emute&c &8for &a1 day"
+    - "&83rd Offence: &emute&c &8for &a7 days"
+    - "&84th Offence: &emute&c Permanently"
+  Degrees:
+    1: '1h'
+    2: '1d'
+    3: '7d'
+    4: ''
+misconduct:
+  Item: "HOPPER"
+  Name: "Misconduct"
+  Type: "Warn"
+  Lore:
+    - "&c  "
+    - "&eWarn"
+  Degrees:
+    1: ''
+other:
+  Item: "HOPPER"
+  Name: "Other"
+  Type: "Warn"
+  Lore:
+    - "&c  "
+    - "&eWarn"
+  Degrees:
+    1: ''
