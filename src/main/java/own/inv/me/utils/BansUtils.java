@@ -62,12 +62,14 @@ public class BansUtils {
 
     public static String getPunishPlayerCommand(String targetName, String punishmentName, boolean silent) throws ExecutionException, InterruptedException {
         String punishmentType = Config.getPunishmentType(punishmentName);
+        punishmentType = punishmentType.toLowerCase().replaceAll("ip", "");
         String punishmentReason = Config.getPunishmentReason(punishmentName);
         Integer punishmentCount = getPunishmentCount(targetName, punishmentReason, punishmentType).get();
         return (punishmentType + (silent? " -s " : " ") + targetName + " " + Config.getPunishmentDuration(punishmentName, punishmentCount) + " " + punishmentReason);
     }
 
     public static Future<Integer> getPunishmentCount(String targetName, String punishmentReason, String punishmentType) {
+        punishmentType = punishmentType.replaceFirst("ip", "");
         if (punishmentType.equalsIgnoreCase("warn")) {
             punishmentType = "warning";
         }
@@ -88,10 +90,6 @@ public class BansUtils {
             }
             return counter;
         });
-    }
-
-    public static String getPunishPlayer(Player executer, String targetName, String reason, String duration, String punishmentType) {
-        return (punishmentType + " " + targetName + " " + duration + " " + reason);
     }
 
     public static Future<ArrayList<Punishment>> getPlayerHistory(String playerUUID, PunishmentType punishmentType) {
@@ -124,6 +122,7 @@ public class BansUtils {
     }
 
     public static Future<Boolean> deletePunishment(long id, String punishmentType) {
+        punishmentType = punishmentType.replaceFirst("ip", "");
         if (punishmentType.toLowerCase().equals("warn")) {
             punishmentType = "warning";
         }
@@ -142,6 +141,7 @@ public class BansUtils {
     }
 
     public static Future<Boolean> updatePunishment(long id, String punishmentType, String reason) {
+        punishmentType = punishmentType.replaceFirst("ip", "");
         if (punishmentType.toLowerCase().equals("warn")) {
             punishmentType = "warning";
         }
