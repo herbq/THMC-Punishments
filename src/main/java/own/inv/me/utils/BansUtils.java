@@ -54,10 +54,11 @@ public class BansUtils {
         }
     }
 
-    public static UUID getPlayerUUID(String playerName) {
+    public static String getPlayerUUID(String playerName) {
         OfflinePlayer offlinePlayer = Bukkit.getOfflinePlayer(playerName);
+        if (playerName.equalsIgnoreCase("console")) return playerName;
         UUID uuid = offlinePlayer.getUniqueId();
-        return uuid;
+        return uuid.toString();
     }
 
     public static String getPunishPlayerCommand(String targetName, String punishmentName, boolean silent) throws ExecutionException, InterruptedException {

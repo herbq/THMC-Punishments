@@ -24,7 +24,7 @@ public class PunishmentInventory implements Listener {
         ItemStack item = Config.getItem("Main_Inventory.Player_Info", new Pair<>("%name%", targetName));
         if (item.getType() == Material.PLAYER_HEAD) {
             SkullMeta mitem = (SkullMeta) item.getItemMeta();
-            mitem.setOwningPlayer(Bukkit.getOfflinePlayer(BansUtils.getPlayerUUID(targetName)));
+            mitem.setOwningPlayer(Bukkit.getOfflinePlayer(targetName));
             item.setItemMeta(mitem);
         }
         return item;

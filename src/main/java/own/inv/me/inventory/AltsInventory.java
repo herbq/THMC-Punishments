@@ -29,7 +29,7 @@ public class AltsInventory implements Listener {
         ItemStack item = Config.getItem(".Alts_Inventory.Alt", new Pair<>("%alt_name%", pName), new Pair<>("%last_seen%", Bukkit.getPlayer(pName) != null? "Online" : lastSeen));
         if (item.getType() == Material.PLAYER_HEAD) {
             SkullMeta mitem = (SkullMeta) item.getItemMeta();
-            mitem.setOwningPlayer(Bukkit.getOfflinePlayer(BansUtils.getPlayerUUID(pName)));
+            mitem.setOwningPlayer(Bukkit.getOfflinePlayer(pName));
             mitem.getPersistentDataContainer().set(NamespacedKey.minecraft("playername"), PersistentDataType.STRING, pName);
             item.setItemMeta(mitem);
         }

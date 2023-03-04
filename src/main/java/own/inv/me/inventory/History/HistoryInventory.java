@@ -40,8 +40,10 @@ public class HistoryInventory implements Listener {
             punishmentTypeCMD = "Warn";
         }
 
+        String bannedBy = punishment.bannedBy;
+
         return Config.getItem(".History_Inventory." + punishmentTypeCMD + "_History." + (punishment.active? "Active" : "Finished"), new Pair<>("%reason%", punishment.reason),
-                new Pair<>("%staff%", Bukkit.getOfflinePlayer(UUID.fromString(punishment.bannedBy)).getName()),
+                new Pair<>("%staff%", bannedBy.equalsIgnoreCase("console")? bannedBy : Bukkit.getOfflinePlayer(UUID.fromString(bannedBy)).getName()),
                 new Pair<>("%issue_date%", TimeConverter.formatDate(punishment.time)),
                 new Pair<>("%expire_date%", TimeConverter.formatDate(punishment.until)),
                 new Pair<>("%active%", punishment.active? "Yes" : "No"),

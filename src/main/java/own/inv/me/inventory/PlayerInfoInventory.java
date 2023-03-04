@@ -21,28 +21,28 @@ import java.util.concurrent.ExecutionException;
 
 public class PlayerInfoInventory implements Listener {
     public static ItemStack getGodPermsItem(String targetName) {
-        Player p = Bukkit.getPlayer(BansUtils.getPlayerUUID(targetName));
+        Player p = Bukkit.getPlayer(targetName);
         return Config.getItem("Player_Info_Inventory.God_Perms", new Pair<>("%god_perms%", (p != null? (p.hasPermission("essentials.god")? "Yes" : "No") : "-") ));
     }
     public static ItemStack getFlyPermsItem(String targetName) {
-        Player p = Bukkit.getPlayer(BansUtils.getPlayerUUID(targetName));
+        Player p = Bukkit.getPlayer(targetName);
         return Config.getItem("Player_Info_Inventory.Fly_Perms", new Pair<>("%fly_perms%", (p != null? (p.hasPermission("thmc.fly")? "Yes" : "No") : "-") ));
     }
     public static ItemStack getUsernameItem(String targetName) {
         ItemStack item = Config.getItem("Player_Info_Inventory.Username", new Pair<>("%username%", targetName));
         if (item.getType() == Material.PLAYER_HEAD) {
             SkullMeta mitem = (SkullMeta) item.getItemMeta();
-            mitem.setOwningPlayer(Bukkit.getOfflinePlayer(BansUtils.getPlayerUUID(targetName)));
+            mitem.setOwningPlayer(Bukkit.getOfflinePlayer(targetName));
             item.setItemMeta(mitem);
         }
         return item;
     }
     public static ItemStack getIsStaffItem(String targetName) {
-        Player p = Bukkit.getPlayer(BansUtils.getPlayerUUID(targetName));
+        Player p = Bukkit.getPlayer(targetName);
         return Config.getItem("Player_Info_Inventory.Staff", new Pair<>("%is_staff%", (p != null? (p.hasPermission("thmc.staff")? "Yes" : "No") : "-") ));
     }
     public static ItemStack getIsOPItem(String targetName) {
-        OfflinePlayer p = Bukkit.getOfflinePlayer(BansUtils.getPlayerUUID(targetName));
+        OfflinePlayer p = Bukkit.getOfflinePlayer(targetName);
         return Config.getItem("Player_Info_Inventory.OP", new Pair<>("%is_op%", p.isOp()? "Yes" : "No"));
     }
 
